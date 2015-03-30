@@ -1,0 +1,15 @@
+@ngdoc overview
+@name API Reference
+@description
+
+# ng.cork.util API Reference
+
+> Welcome to the **ng.cork.util** API reference.
+
+If you want to know how **ng.cork.util** works, checkout the {@link guide/ guide} and the {@link demos/ demos}.
+
+
+## Modules
+
+- **[ng.cork.util](#/api/ng.cork.util)** - Provides a configurable service that divides numbers by X, as well as a directive and a filter.
+

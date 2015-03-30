@@ -1,0 +1,33 @@
+@ngdoc overview
+@name ng.cork.util
+@description
+
+> AngularJS opinionated util functions.
+
+# Dependencies
+
+- None.
+
+
+# Usage
+
+Add this module as a dependency of your modules.
+
+<pre>
+angular.module('app', ['ng.cork.util']);
+</pre>
+
+## [corkUtil](#/api/ng.cork.util.corkUtil)
+
+<pre>
+angular.module('app', ['ng.cork.util'])
+.controller('myController', [
+    'corkUtil',
+    function (corkUtil) {
+        corkUtil.extend($scope.foo, $scope.bar);
+        corkUtil.isRegExp(...);
+        corkUtil.isPromise(...);
+    }
+])
+</pre>
+

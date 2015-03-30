@@ -1,0 +1,28 @@
+{
+  "generator-nglib": {
+    "project.name": "ng.cork.util",
+    "project.description": "AngularJS opinionated util functions.",
+    "bower.id": "ng.cork.util",
+    "npm.id": "ng.cork.util",
+    "angular.module": "ng.cork.util",
+    "has.tpl": false,
+    "has.css": false,
+    "has.less": false,
+    "has.sass": false,
+    "has.docs": true,
+    "use.git": true,
+    "github.username": "cork-labs",
+    "github.reponame": "ng.cork.util",
+    "homepage.url": "https://github.com/cork-labs/ng.cork.util",
+    "docs.url": "http://jarvis.cork-labs.org/ng.cork.util/current/docs",
+    "bugs.url": "https://github.com/cork-labs/ng.cork.util/issues",
+    "license.name": "MIT",
+    "license.url": "http://cork-labs.mit-license.org/2015",
+    "author.name": "Cork Labs",
+    "author.email": "contact@cork-labs.org",
+    "author.url": "http://cork-labs.org",
+    "use.travis": true,
+    "travis.id": "ng.cork.util",
+    "repo.url": "git@github.com:cork-labs/ng.cork.util.git"
+  }
+}
