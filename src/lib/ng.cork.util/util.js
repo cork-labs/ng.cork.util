@@ -148,7 +148,7 @@
                  * ```
                  *
                  * @param {*} value Check
-                 * @returns {boolean} True if the provided value is injectable like.
+                 * @returns {boolean} True if the provided value is injectable.
                  */
                 isInjectable: isInjectable
             };
