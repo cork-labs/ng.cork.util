@@ -1,5 +1,5 @@
 # ng.cork.util
-[![Build Status: Linux](http://img.shields.io/travis/ng.cork.util/master.svg?style=flat-square)](https://travis-ci.org/ng.cork.util)
+[![Build Status: Linux](http://img.shields.io/travis/cork-labs/ng.cork.util/master.svg?style=flat-square)](https://travis-ci.org/cork-labs/ng.cork.util)
 [![Bower version](http://img.shields.io/bower/v/ng.cork.util.svg?style=flat-square)](https://github.com/cork-labs/ng.cork.util)
 
 > AngularJS opinionated util functions.
