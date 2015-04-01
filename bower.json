@@ -7,6 +7,7 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/cork-labs/ng.cork.util",
+  "main": "dist/ng.cork.util.min.js",
   "ignore": [
     "bin",
     "docs",
