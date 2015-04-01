@@ -246,9 +246,41 @@ describe('ng.cork.util', function () {
 
             it('should return FALSE if value of any other type.', inject(function (corkUtil)  {
 
-                expect(corkUtil.isRegExp(false)).toBe(false);
-                expect(corkUtil.isRegExp('')).toBe(false);
-                expect(corkUtil.isRegExp(123)).toBe(false);
+                expect(corkUtil.isPromise(false)).toBe(false);
+                expect(corkUtil.isPromise('')).toBe(false);
+                expect(corkUtil.isPromise(123)).toBe(false);
+            }));
+        });
+
+        describe('isInjectable', function () {
+
+            it('should return TRUE if value is an array and last position is a function.', inject(function (corkUtil)  {
+
+                var injectable = [
+                    'foo',
+                    'bar',
+                    function (foo, bar) {}
+                ];
+
+                expect(corkUtil.isInjectable(injectable)).toBe(true);
+            }));
+
+            it('should return FALSE if value is not an array.', inject(function (corkUtil)  {
+
+                expect(corkUtil.isInjectable({})).toBe(false);
+                expect(corkUtil.isInjectable(false)).toBe(false);
+                expect(corkUtil.isInjectable(99)).toBe(false);
+                expect(corkUtil.isInjectable('bar')).toBe(false);
+            }));
+
+            it('should return FALSE if array is empty .', inject(function (corkUtil)  {
+
+                expect(corkUtil.isInjectable([])).toBe(false);
+            }));
+
+            it('should return FALSE if last pos of the array is not a function.', inject(function (corkUtil)  {
+
+                expect(corkUtil.isInjectable(['boo'])).toBe(false);
             }));
         });
     });

@@ -20,7 +20,11 @@
     }
 
     function isPromise(value) {
-        return value && isFunction(value.then);
+        return !!value && isFunction(value.then);
+    }
+
+    function isInjectable(value) {
+        return isArray(value) && isFunction(value[value.length - 1]);
     }
 
     /**
@@ -125,7 +129,28 @@
                  * @param {*} value Check
                  * @returns {boolean} True if the provided value is promise like.
                  */
-                isPromise: isPromise
+                isPromise: isPromise,
+
+                /**
+                 * @ngdoc function
+                 * @name isInjectable
+                 * @methodOf ng.cork.util.corkUtil
+                 *
+                 * @description
+                 * Checks if a value is an AngularJS injectable function.
+                 *
+                 * Value must be an array, dependencies first, function in the last position.
+                 *
+                 * Ex:
+                 *
+                 * ```
+                 * ['foo', 'bar', function (foo, bar) {}]
+                 * ```
+                 *
+                 * @param {*} value Check
+                 * @returns {boolean} True if the provided value is injectable like.
+                 */
+                isInjectable: isInjectable
             };
 
             return serviceApi;
