@@ -1,5 +1,5 @@
 /**
- * ng.cork.util - v0.0.5 - 2015-04-17
+ * ng.cork.util - v0.0.6 - 2015-05-03
  * https://github.com/cork-labs/ng.cork.util
  *
  * Copyright (c) 2015 Cork Labs <http://cork-labs.org>

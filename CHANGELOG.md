@@ -1,3 +1,11 @@
+<a name="v0.0.6"></a>
+### v0.0.6 (2015-05-03)
+
+
+#### Bug Fixes
+
+* **build:** jarvis script not running correctly in prod (broken bower) ([dd40a8c5](git@github.com:cork-labs/ng.cork.util/commit/dd40a8c53ceefcf50c1a1dae10c282683da07c21))
+
 <a name="v0.0.5"></a>
 ### v0.0.5 (2015-04-17)
 
